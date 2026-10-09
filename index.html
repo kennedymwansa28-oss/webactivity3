@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kennedy Mwansa - second-year Cyber Security student at Mulungushi University. Personal portfolio for ICT251 Web Technologies.">
+  <title>Kennedy Mwansa - Student Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="brand" href="#top">Kennedy Mwansa</a>
+
+      <div class="header-buttons">
+        <button type="button" id="theme-toggle" class="small-button" aria-pressed="false">Dark mode</button>
+        <button type="button" id="menu-toggle" class="small-button menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
+    </div>
+
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="#about">About Me</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#learning-plan">Learning Plan</a>
+      <a href="#projects">Projects &amp; Skills</a>
+      <a href="#photos">My Photos</a>
+      <a href="#media">My Media</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section id="top" class="hero">
+      <h1>Kennedy Mwansa</h1>
+      <p class="hero-programme">Second-year Cyber Security student &middot; Mulungushi University</p>
+      <p class="hero-intro">
+        I am learning how to build and protect software. This portfolio shows who I am,
+        what I am learning in ICT251 Web Technologies, and the skills I am building along the way.
+      </p>
+      <div class="hero-buttons">
+        <a class="button" href="#projects">View My Projects</a>
+        <a class="button button-outline" href="#contact">Contact Me</a>
+      </div>
+    </section>
+
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p>
+        My name is Kennedy Mwansa, student number 202505451, and I am a second-year Cyber
+        Security student at Mulungushi University in Kabwe, Zambia. I completed my Grade 12
+        national examinations in 2024 and am now building further on my foundation
+        in programming, data structures and web development. Outside of coursework, I enjoy
+        working on practical, deployable software projects rather than only theory, and I would
+        describe strong interpersonal skills as one of my core strengths. This page is part of
+        my ICT251 Web Technologies module.
+      </p>
+    </section>
+
+    <section id="hobbies" class="content-section">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Reading books</li>
+        <li>Playing video games</li>
+        <li>Eating</li>
+      </ul>
+    </section>
+
+    <section id="learning-plan" class="content-section">
+      <h2>My Learning Plan</h2>
+      <p>Three steps I will take to improve my web development skills:</p>
+      <ol>
+        <li>Practise HTML and CSS daily by rebuilding small sections of real websites.</li>
+        <li>Complete the freeCodeCamp responsive web design curriculum, one module a week.</li>
+        <li>Build a small personal project every month and push it to GitHub for feedback.</li>
+      </ol>
+      <p>
+        A resource I use often:
+        <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">MDN Web Docs - Learn web development</a>.
+      </p>
+
+      <h3>Weekly Web Learning Plan</h3>
+      <div class="table-wrap">
+        <table>
+          <caption>My weekly schedule for learning web technologies</caption>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Topic</th>
+              <th scope="col">Practice Task</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>HTML structure and semantics</td>
+              <td>Rebuild a simple page using header, nav, main and footer</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>CSS layout and the box model</td>
+              <td>Style a card with padding, margin and borders</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>Forms and accessibility</td>
+              <td>Build a contact form with labelled, required fields</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section">
+      <h2>Projects &amp; Skills</h2>
+      <p>Four things I have learned so far in ICT251, and where this website uses them.</p>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Semantic HTML5</h3>
+          <p>
+            I structure pages with header, nav, main, section and footer, add descriptive
+            alt text, and connect every form label to its field so the page works for everyone.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Responsive CSS</h3>
+          <p>
+            I use the box model, colour variables, flexible images and a media query so this
+            site stays readable on a phone and on a computer.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>JavaScript and the DOM</h3>
+          <p>
+            I respond to clicks and form submissions to update the page: the photo viewer,
+            the theme switch, the phone menu and the contact form preview.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Safe handling of user input</h3>
+          <p>
+            As a Cyber Security student, I validate form input and display it with
+            textContent, so text typed by a visitor is never run as HTML code.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="photos" class="content-section">
+      <h2>My Photos</h2>
+      <p>Use the buttons to move through my three photos.</p>
+
+      <div class="gallery-viewer">
+        <figure>
+          <img id="gallery-image" src="images/photo1.jpg" alt="Kennedy Mwansa at home">
+          <figcaption id="gallery-caption">Me at home.</figcaption>
+        </figure>
+
+        <div class="gallery-controls">
+          <button type="button" id="prev-photo" class="button">&larr; Previous</button>
+          <span id="gallery-count" aria-live="polite">Photo 1 of 3</span>
+          <button type="button" id="next-photo" class="button">Next &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="media" class="content-section">
+      <h2>My Media</h2>
+
+      <h3>Video Introduction</h3>
+      <video controls preload="metadata">
+        <source src="videos/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        A short video where I introduce myself, say which programme I study at Mulungushi
+        University and share one web skill I hope to learn.
+      </p>
+      <p>
+        Written summary: in the video I give my name, explain what I study and say that I
+        want to get better at building responsive websites.
+      </p>
+
+      <h3>Audio Clip</h3>
+      <audio controls preload="metadata">
+        <source src="videos/voice.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+      <p>
+        A short audio recording where I introduce myself and share my hobbies: gaming,
+        reading and ethical hacking.
+      </p>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <p class="form-note"><strong>Browser demonstration only &mdash; no message is sent.</strong></p>
+
+      <form id="contact-form" action="#" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required aria-describedby="name-error">
+          <span class="error" id="name-error"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required aria-describedby="email-error">
+          <span class="error" id="email-error"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option value="General enquiry">General enquiry</option>
+            <option value="Project collaboration">Project collaboration</option>
+            <option value="Feedback on this site">Feedback on this site</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+          <span class="error" id="message-error"></span>
+        </div>
+
+        <button type="submit" class="button">Preview Message</button>
+        <p id="form-status" class="form-status" role="status"></p>
+      </form>
+
+      <div id="form-preview" class="form-preview" hidden>
+        <h3>Form preview</h3>
+        <p id="preview-note"></p>
+        <dl id="preview-list"></dl>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Kennedy Mwansa &middot; Student Number 202505451 &middot; ICT251 Web Technologies</p>
+    <p><a href="https://github.com/YOUR-GITHUB-USERNAME/YOUR-REPOSITORY-NAME" target="_blank" rel="noopener">View Source on GitHub</a></p>
+  </footer>
+
+</body>
+</html>
